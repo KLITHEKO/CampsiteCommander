@@ -14,7 +14,7 @@ class DisplayActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_display)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btnBack)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -44,10 +44,10 @@ class DisplayActivity : AppCompatActivity() {
                     display.append("Comments: ${comments[i]}\n\n")
                 }
 
-                // SHOW ITEMS (QTY >= 2)
-                display.append("--- Items with Qty >= 2 ---\n")
+                // Total Items packed
+                display.append("--- Total Items Packed ---\n")
                 for (i in quantities.indices) {
-                    if (quantities[i] >= 2) {
+                    if (quantities[i] >= 1) {
                         display.append("Item: ${items[i]} (Qty: ${quantities[i]})\n")
                     }
                 }

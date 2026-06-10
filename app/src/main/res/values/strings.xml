@@ -14,4 +14,5 @@
     <string name="inventory">Inventory</string>
     <string name="back">Back</string>
     <string name="back_to_base">Back To Base</string>
+    <string name="inventory_details">Inventory details</string>
 </resources>
