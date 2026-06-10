@@ -18,6 +18,19 @@ Once all data has been displayed a user is provided with a button to go back to 
 The app uses, constraint, linear and scroll views in xml to ensure all views are contained.
 
 
+**app theme:**
+
+**Visual look design**
+
+The users are then presented with a simple and intuitive UI that prompts an input to provide/retreive a "social spark" based on the time of day. 
+
+The interface uses an artisan sage and clay  inspired colour palette, characterised by earthy tones that are aligned with flat material design principles. Subtle borders and soft shadows are used to create a clean and modern aesthetic.
+
+colors can be found in the colors.xml
+
+
+
+
 
 <img width="385" height="712" alt="image" src="https://github.com/user-attachments/assets/e14dd0ee-3c7e-4342-845b-898d3e5f4c51" />
 
