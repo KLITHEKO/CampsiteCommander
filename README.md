@@ -22,9 +22,8 @@ The app uses, constraint, linear and scroll views in xml to ensure all views are
 
 **Visual look design**
 
-The users are then presented with a simple and intuitive UI that prompts an input to provide/retreive a "social spark" based on the time of day. 
-
-The interface uses an artisan sage and clay  inspired colour palette, characterised by earthy tones that are aligned with flat material design principles. Subtle borders and soft shadows are used to create a clean and modern aesthetic.
+The users are then presented with a simple and intuitive UI for the campsite commander app that
+uses an artisan sage and clay  inspired colour palette, characterised by earthy tones that are aligned with flat material design principles. Subtle borders and soft shadows are used to create a clean and modern aesthetic.
 
 colors can be found in the colors.xml
 
