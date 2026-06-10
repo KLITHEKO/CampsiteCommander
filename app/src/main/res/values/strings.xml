@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Campsite Commander</string>
+    <string name="campsite_commander">CampsiteCommander</string>
+    <string name="enter_item_name">Enter Item Name</string>
+    <string name="welcome">welcome</string>
+    <string name="enter_details_below">enter details below</string>
+    <string name="category">Enter Category</string>
+    <string name="add_gear">Add Gear</string>
+    <string name="clear">clear</string>
+    <string name="enter_time">enter time</string>
+    <string name="enter_comments">Enter Comments</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="view_inventory">view Inventory</string>
+    <string name="inventory">Inventory</string>
+    <string name="back">Back</string>
+    <string name="back_to_base">Back To Base</string>
 </resources>

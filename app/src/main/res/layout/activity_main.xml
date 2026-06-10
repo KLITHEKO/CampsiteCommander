@@ -1,19 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/warm_bg"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="32dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/inputContainer"
+                android:layout_width="372dp"
+                android:layout_height="531dp"
+                android:autofillHints="add once done"
+                android:background="@drawable/flat_card_bg"
+                android:orientation="vertical"
+                android:padding="24dp"
+                tools:ignore="UselessParent,TextSizeCheck">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.1"
+                    android:text="@string/enter_details_below"
+                    android:textAllCaps="true"
+                    android:textColor="@color/warm_accent"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/Item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:autofillHints="Item"
+                    android:background="@drawable/input_bg"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/enter_item_name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/grey_700"
+                    android:textColorHint="@color/grey_700"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <EditText
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:autofillHints="Category"
+                    android:background="@drawable/input_bg"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/category"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/grey_700"
+                    android:textColorHint="@color/grey_700"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:autofillHints="quantity"
+                    android:background="@drawable/input_bg"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/enter_quantity"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/grey_700"
+                    android:textColorHint="@color/grey_700"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <EditText
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input_bg"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/enter_comments"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/grey_700"
+                    android:textColorHint="@color/grey_700"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/warm_accent"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.1"
+                    android:text="@string/add_gear"
+                    android:textAllCaps="true"
+                    android:textColor="@color/warm_paper"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/btnViewInventory"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.1"
+                    android:text="@string/view_inventory"
+                    android:textAllCaps="true"
+                    android:textColor="@color/warm_terracotta"
+                    tools:ignore="VisualLintButtonSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="351dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/warm_accent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/mainContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
