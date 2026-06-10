@@ -130,8 +130,23 @@
                     android:textAllCaps="true"
                     android:textColor="@color/warm_terracotta"
                     tools:ignore="VisualLintButtonSize" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:letterSpacing="0.05"
+                    android:textAllCaps="true"
+                    android:textColor="@color/warm_error"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
             </LinearLayout>
         </LinearLayout>
+
 
         <TextView
             android:id="@+id/tvTitle"

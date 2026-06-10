@@ -1,3 +1,11 @@
+/*
+
+ NAME: KABELO LITHEKO
+
+ STUDENT NUMBER: ST10517750
+
+ */
+
 package com.example.campsitecommander
 
 import android.content.Intent
@@ -49,6 +57,8 @@ class MainActivity : AppCompatActivity() {
             val quantityText = etQuantity.text.toString().trim()
             val commentsText = etComments.text.toString().trim()
 
+            //Exception handling
+
             if (itemText.isEmpty() || categoryText.isEmpty() || quantityText.isEmpty() || commentsText.isEmpty()) {
                 Toast.makeText(this, "Fill in all fields", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -60,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Add to lists
+            // Add to lists function(add.)
             itemList.add(itemText)
             categoryList.add(categoryText)
             quantityList.add(quantityInt)
@@ -69,7 +79,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show()
         }
 
-        //VIEW BUTTON (SEND DATA) - Joining screen two to Screen 1
+        //View button sending data to DisplayActivity
 
         btnView.setOnClickListener {
 
@@ -82,7 +92,6 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
-
 
     }
 
