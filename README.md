@@ -21,11 +21,29 @@ The app uses, constraint, linear and scroll views in xml to ensure all views are
 
 <img width="385" height="712" alt="image" src="https://github.com/user-attachments/assets/e14dd0ee-3c7e-4342-845b-898d3e5f4c51" />
 
-Inputing data
+
+
+
+
+
+
+**Inputing data**
+
+
+
+
 <img width="397" height="715" alt="image" src="https://github.com/user-attachments/assets/5f55795c-87ca-49c4-bc9b-37d4e97bc590" />
 
 
+
+
+
+
 toast message for error handling if one of the fields is empty: 
+
+
+
+
 
 
 <img width="394" height="491" alt="image" src="https://github.com/user-attachments/assets/2748b5dc-c0cb-4d11-89ff-3ac3ece9be8c" />
@@ -55,7 +73,71 @@ The app launches with a minimalistic splash screen that displays just the applic
 **Simple Android CI utilising Github actions**
 
 This project uses GitHub Actions to automatically test and build the Android app whenever code is pushed or a pull request is opened on the main branch. 
-It sets up Java 17, installs the Android SDK, runs unit tests, and builds the project — ensuring the code compiles and passes tests consistently (GitHub, 2023).
+It sets up Java 17, installs the Android SDK, runs unit tests, and builds the project — ensuring the code compiles and passes tests consistently.
+
+
+
+**********************************************************************************************************************************************************************************************************
+
+
+How to guide
+
+
+
+
+1. Enter Items (One by one) as per the input fields
+
+   <img width="292" height="249" alt="image" src="https://github.com/user-attachments/assets/793e0fea-cb28-494a-9c11-4121d8c49cbd" />
+
+
+
+2. once satisfied with data input click add gear button:
+
+
+
+
+<img width="300" height="353" alt="image" src="https://github.com/user-attachments/assets/2b8d1e65-b715-48c2-84d9-f8d1e56966f0" />
+
+
+
+
+
+a toast message will let you know that the data was inputed accordingly and you can add another item:
+
+
+
+
+
+<img width="172" height="46" alt="image" src="https://github.com/user-attachments/assets/18e77b27-21a4-43d2-8310-4d45be8ed70f" />
+
+
+
+
+
+
+
+3. Once satisfied with click on the view inventory button and a detailed inventory list with total inventory and items packed will be shown accordingly with a back to base button
+
+
+
+   <img width="282" height="510" alt="image" src="https://github.com/user-attachments/assets/9cd847bb-1311-4d80-bf90-71144e9f03ac" />
+
+
+
+Back to base sends you to the main screen where you can add additional items
+
+
+<img width="300" height="562" alt="image" src="https://github.com/user-attachments/assets/3f67e58d-7dd3-4e64-8c81-ada47d913a8c" />
+
+
+
+4. Once user is done, you can exit the app. 
+
+
+
+
+
+
 
 
 
